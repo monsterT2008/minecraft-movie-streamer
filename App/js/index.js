@@ -19,7 +19,41 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button4")
+                .setDirtyMark(false)
+                .setLeft("23.61904761904762em")
+                .setTop("38.095238095238095em")
+                .setWidth("13.638095238095238em")
+                .setHeight("4.3428571428571425em")
+                .setCaption("Log in")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label7")
+                .setLeft("48.76190476190476em")
+                .setTop("6.857142857142857em")
+                .setWidth("0.1523809523809524em")
+                .setHeight("0.45714285714285713em")
+                .setCaption("")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input6")
+                .setRequired(true)
+                .setDirtyMark(false)
+                .setLeft("15.238095238095237em")
+                .setTop("31.238095238095237em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password:")
+                .setType("password")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
